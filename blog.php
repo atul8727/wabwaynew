@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-<?php include "components/headtag.php" ?>
+    <?php include "components/headtag.php" ?>
 </head>
 
 <body>
@@ -395,7 +395,7 @@
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-<?php include "components/script.php" ?>
+    <?php include "components/script.php" ?>
 
 </body>
 

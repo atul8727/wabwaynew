@@ -1,3 +1,6 @@
+<?php 
+$activePage = basename($_SERVER['PHP_SELF'], ".php");
+ ?>
 <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
             <a href="index.php" class="navbar-brand p-0">
                 <h1 class="m-0"><i class="fa fa-user-tie me-2"></i>Startup</h1>
@@ -7,9 +10,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
-                    <a href="index.php" class="nav-item nav-link active">Home</a>
-                    <a href="about.php" class="nav-item nav-link">About</a>
-                    <a href="service.php" class="nav-item nav-link">Services</a>
+                    <a href="index.php" class="nav-item nav-link <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
+                    <a href="about.php" class="nav-item nav-link <?= ($activePage == 'about') ? 'active':''; ?>">About</a>
+                    <a href="service.php" class="nav-item nav-link <?= ($activePage == 'service') ? 'active':''; ?>">Services</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                         <div class="dropdown-menu m-0">
@@ -27,7 +30,7 @@
                             <a href="quote.php" class="dropdown-item">Free Quote</a>
                         </div>
                     </div>
-                    <a href="contact.php" class="nav-item nav-link">Contact</a>
+                    <a href="contact.php" class="nav-item nav-link <?= ($activePage == 'contact') ? 'active':''; ?>">Contact</a>
                 </div>
 
             </div>
