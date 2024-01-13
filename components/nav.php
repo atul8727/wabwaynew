@@ -13,14 +13,14 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                     <a href="index.php" class="nav-item nav-link <?= ($activePage == 'index') ? 'active':''; ?>">Home</a>
                     <a href="about.php" class="nav-item nav-link <?= ($activePage == 'about') ? 'active':''; ?>">About</a>
                     <a href="service.php" class="nav-item nav-link <?= ($activePage == 'service') ? 'active':''; ?>">Services</a>
-                    <div class="nav-item dropdown">
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
                         <div class="dropdown-menu m-0">
                             <a href="blog.php" class="dropdown-item">Blog Grid</a>
                             <a href="detail.php" class="dropdown-item">Blog Detail</a>
                         </div>
-                    </div>
-                    <div class="nav-item dropdown">
+                    </div> -->
+                    <!-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu m-0">
                             <a href="price.php" class="dropdown-item">Pricing Plan</a>
@@ -29,7 +29,7 @@ $activePage = basename($_SERVER['PHP_SELF'], ".php");
                             <a href="testimonial.php" class="dropdown-item">Testimonial</a>
                             <a href="quote.php" class="dropdown-item">Free Quote</a>
                         </div>
-                    </div>
+                    </div> -->
                     <a href="contact.php" class="nav-item nav-link <?= ($activePage == 'contact') ? 'active':''; ?>">Contact</a>
                 </div>
 
